@@ -45,8 +45,8 @@ public class controllador : MonoBehaviour
         transform.position += new Vector3(hInput * speed * Time.deltaTime, 0, 0);
 
         //Clamping
-        float newX = Mathf.Clamp(transform.position.x, -7 + padding, 7 - padding);
-        float newY = Mathf.Clamp(transform.position.y, -12 + padding, 12 - padding);
+        float newX = Mathf.Clamp(transform.position.x, -9 + padding, 9 - padding);
+        float newY = Mathf.Clamp(transform.position.y, -15 + padding, 15 - padding);
 
         transform.position = new Vector3(newX, newY, transform.position.z);
     }
@@ -54,7 +54,7 @@ public class controllador : MonoBehaviour
 
     void Fire()
     {
-        var fighter = GameObject.Find("fighter");
+        var fighter = GameObject.Find("Nave");
         if (fighter != null)
         {
             Vector3 newRightPosition = fighter.transform.position + Vector3.up * 0.3f + Vector3.up * 0.5f;

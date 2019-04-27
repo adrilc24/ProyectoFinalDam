@@ -62,6 +62,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\bulletController.cs" />
     <Compile Include="Assets\Scripts\controllador.cs" />
+    <Compile Include="Assets\Scripts\PathEnemigo.cs" />
+    <Compile Include="Assets\Scripts\SpawnEnemigo.cs" />
+    <Compile Include="Assets\Scripts\WaveConfig.cs" />
     <None Include="Assets\Space Shooter Visual Assets\Spritesheet\sheet.xml" />
     <None Include="Assets\Space Shooter Visual Assets\license.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">

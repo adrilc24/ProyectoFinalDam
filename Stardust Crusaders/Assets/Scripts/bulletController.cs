@@ -15,10 +15,9 @@ public class bulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y > 12)
+        if(transform.position.y > 18)
         {
             Destroy(gameObject);
-            print("Disparo destruido");
         }
     }
 }
