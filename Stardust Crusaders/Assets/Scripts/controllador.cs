@@ -57,10 +57,9 @@ public class controllador : MonoBehaviour
         var fighter = GameObject.Find("Nave");
         if (fighter != null)
         {
-            Vector3 newRightPosition = fighter.transform.position + Vector3.up * 0.3f + Vector3.up * 0.5f;
-            //Vector3 newLeftPosition = fighter.transform.position + Vector3.left * 0.3f + Vector3.left * 0.5f;
-            Instantiate(bulletFighter, newRightPosition, Quaternion.identity);
-            //Instantiate(bulletFighter, newLeftPosition, Quaternion.identity);
+            Vector3 newPosition = fighter.transform.position + Vector3.up * 0.3f + Vector3.up * 0.5f;
+            Instantiate(bulletFighter, newPosition, Quaternion.identity);
+
         }
     }
 
