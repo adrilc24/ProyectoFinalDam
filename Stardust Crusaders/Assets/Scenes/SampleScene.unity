@@ -467,6 +467,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave
       objectReference: {fileID: 0}
+    - target: {fileID: 2662309389871530081, guid: 55d8079e23bf8cb4fa6f3b0d49cac033,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2662309389871530094, guid: 55d8079e23bf8cb4fa6f3b0d49cac033,
         type: 3}
       propertyPath: m_LocalPosition.x

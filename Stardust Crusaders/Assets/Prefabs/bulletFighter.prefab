@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2529107114056295558}
   - component: {fileID: 4585840616238047138}
   - component: {fileID: 5115110414558580977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bulletFighter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

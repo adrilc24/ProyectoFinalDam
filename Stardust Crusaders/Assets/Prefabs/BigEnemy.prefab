@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4820726141689982878}
   - component: {fileID: 1380968990470787291}
   - component: {fileID: 3523598928861386173}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BigEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,13 +107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f39a017712c9d847bea4d9097adaa30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  hp: 100
   shotCounter: 0
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 3
+  minTimeBetweenShots: 1
+  maxTimeBetweenShots: 5
   enemyShot: {fileID: 4710713602428603678, guid: 01378ee9ff13d784a94b7d16aa42d513,
     type: 3}
-  speed: 6
+  speed: 4
 --- !u!58 &3523598928861386173
 CircleCollider2D:
   m_ObjectHideFlags: 0

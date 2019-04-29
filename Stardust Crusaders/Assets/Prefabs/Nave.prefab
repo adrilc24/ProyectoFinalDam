@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2662309389871530094}
   - component: {fileID: 2662309389871530092}
   - component: {fileID: 2662309389871530095}
+  - component: {fileID: 3188114395186495248}
   m_Layer: 0
   m_Name: Nave
   m_TagString: Untagged
@@ -94,5 +95,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   padding: 1
+  hp: 100
   bulletFighter: {fileID: 2529107114056295559, guid: 3aa508f85cf596e4299165b5d1e9d8ed,
     type: 3}
+--- !u!60 &3188114395186495248
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2662309389871530081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.775, y: 2.625}
+    newSize: {x: 2.22, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.475, y: -0.6}
+      - {x: 0.1375, y: -0.3375}
+      - {x: 0.175, y: -0.3375}
+      - {x: 0.375, y: -0.2875}
+      - {x: 1.125, y: -0.112500004}
+      - {x: 1.3125, y: -0.0375}
+      - {x: 1.3125, y: 0.025}
+      - {x: 1.2375001, y: 0.075}
+      - {x: 0.9375, y: 0.1375}
+      - {x: 0.125, y: 0.35}
+      - {x: 0.125, y: 0.58750004}
+      - {x: 0.45000002, y: 0.58750004}
+      - {x: 0.4875, y: 0.625}
+      - {x: 0.5, y: 0.65000004}
+      - {x: 0.2875, y: 0.825}
+      - {x: -0.25, y: 1.2}
+      - {x: -0.2875, y: 1.2}
+      - {x: -0.7, y: 0.925}
+      - {x: -1.0375, y: 0.65000004}
+      - {x: -1.0375, y: 0.625}
+      - {x: -1, y: 0.58750004}
+      - {x: -0.9125, y: 0.5625}
+      - {x: -1.15, y: 0.3375}
+      - {x: -1.15, y: 0.112500004}
+      - {x: -1.1125001, y: 0.0875}
+      - {x: -0.9125, y: 0.0875}
+      - {x: -1.1375, y: -0.16250001}
+      - {x: -1.1375, y: -0.38750002}
+      - {x: -0.8875, y: -0.6}
+      - {x: -0.85, y: -0.6}
+      - {x: -1, y: -0.6}
+      - {x: -1.025, y: -0.625}
+      - {x: -1.025, y: -0.6625}
+      - {x: -0.96250004, y: -0.725}
+      - {x: -0.7, y: -0.925}
+      - {x: -0.3, y: -1.2125}
+      - {x: -0.22500001, y: -1.2125}
+      - {x: -0.2, y: -1.2}
+      - {x: 0.3625, y: -0.77500004}
+      - {x: 0.5, y: -0.6625}
+      - {x: 0.5, y: -0.625}

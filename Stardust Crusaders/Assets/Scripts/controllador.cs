@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class controllador : MonoBehaviour
 {
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +13,12 @@ public class controllador : MonoBehaviour
     }
 
     // Update is called once per frame
+    [Header("Movimiento")]
     public float speed = 12f;
     public float padding = 1f;
+    [Header("HP")]
+    [SerializeField] int hp = 100;
+
     public GameObject bulletFighter;
 
     void Update()
@@ -31,6 +37,23 @@ public class controllador : MonoBehaviour
             CancelInvoke("Fire");
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+        if (!damageDealer) { return; }
+        ProcessHit(damageDealer);
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        hp -= damageDealer.GetDamage();
+        damageDealer.Hit();
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Movimiento()
