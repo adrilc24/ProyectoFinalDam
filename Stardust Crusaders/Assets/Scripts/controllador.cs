@@ -16,8 +16,15 @@ public class controllador : MonoBehaviour
     [Header("Movimiento")]
     public float speed = 12f;
     public float padding = 1f;
+
     [Header("HP")]
     [SerializeField] int hp = 100;
+
+    [Header ("Audio")]
+    [SerializeField] AudioClip deathSFX;
+    [SerializeField] [Range(0, 1)] float dsVolume = 0.5f;
+    [SerializeField] AudioClip shootSFX;
+    [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.15f;
 
     public GameObject bulletFighter;
 
@@ -53,6 +60,7 @@ public class controllador : MonoBehaviour
         if (hp <= 0)
         {
             Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, dsVolume);
         }
     }
 
@@ -82,7 +90,7 @@ public class controllador : MonoBehaviour
         {
             Vector3 newPosition = fighter.transform.position + Vector3.up * 0.3f + Vector3.up * 0.5f;
             Instantiate(bulletFighter, newPosition, Quaternion.identity);
-
+            AudioSource.PlayClipAtPoint(shootSFX, Camera.main.transform.position, shootSoundVolume);
         }
     }
 

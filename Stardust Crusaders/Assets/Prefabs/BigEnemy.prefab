@@ -114,6 +114,13 @@ MonoBehaviour:
   enemyShot: {fileID: 4710713602428603678, guid: 01378ee9ff13d784a94b7d16aa42d513,
     type: 3}
   speed: 4
+  deathVFX: {fileID: 6989573210815199028, guid: 6464dfbdc02ab3a419d758ad55a9952d,
+    type: 3}
+  explosionDuration: 0.6
+  deathSFX: {fileID: 8300000, guid: 1e132ce63c006e349b1942fa979615ed, type: 3}
+  dsVolume: 0.13
+  shootSFX: {fileID: 8300000, guid: 5955abdb64cdd904fb80393931f7af21, type: 3}
+  shootSoundVolume: 0.058
 --- !u!58 &3523598928861386173
 CircleCollider2D:
   m_ObjectHideFlags: 0

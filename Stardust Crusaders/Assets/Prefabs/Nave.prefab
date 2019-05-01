@@ -96,6 +96,10 @@ MonoBehaviour:
   speed: 15
   padding: 1
   hp: 100
+  deathSFX: {fileID: 8300000, guid: e2064099fa13aa54e9969a0108a97891, type: 3}
+  dsVolume: 0.214
+  shootSFX: {fileID: 8300000, guid: 2ebdd93d1a2f3664e8693442ef960418, type: 3}
+  shootSoundVolume: 0.058
   bulletFighter: {fileID: 2529107114056295559, guid: 3aa508f85cf596e4299165b5d1e9d8ed,
     type: 3}
 --- !u!60 &3188114395186495248

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bulletController : MonoBehaviour
 {
-    [Header("Vlocidad bala")]
+    [Header("Velocidad bala")]
     public float speed = 1f;
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,7 @@ public class bulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y > 18)
+        if(transform.position.y > 20)
         {
             Destroy(gameObject);
         }
