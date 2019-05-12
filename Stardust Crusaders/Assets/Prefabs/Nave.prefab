@@ -100,6 +100,9 @@ MonoBehaviour:
   dsVolume: 0.214
   shootSFX: {fileID: 8300000, guid: 2ebdd93d1a2f3664e8693442ef960418, type: 3}
   shootSoundVolume: 0.058
+  deathVFX: {fileID: 6989573210815199028, guid: 6464dfbdc02ab3a419d758ad55a9952d,
+    type: 3}
+  explosionDuration: 2
   bulletFighter: {fileID: 2529107114056295559, guid: 3aa508f85cf596e4299165b5d1e9d8ed,
     type: 3}
 --- !u!60 &3188114395186495248

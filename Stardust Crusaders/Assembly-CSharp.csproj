@@ -64,7 +64,10 @@
     <Compile Include="Assets\Scripts\controllador.cs" />
     <Compile Include="Assets\Scripts\DamageDealer.cs" />
     <Compile Include="Assets\Scripts\Enemigos.cs" />
+    <Compile Include="Assets\Scripts\GameSession.cs" />
+    <Compile Include="Assets\Scripts\HPDisplay.cs" />
     <Compile Include="Assets\Scripts\LevelLoad.cs" />
+    <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\PathEnemigo.cs" />
     <Compile Include="Assets\Scripts\SpawnEnemigo.cs" />
     <Compile Include="Assets\Scripts\WaveConfig.cs" />

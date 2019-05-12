@@ -26,6 +26,9 @@ public class controllador : MonoBehaviour
     [SerializeField] AudioClip shootSFX;
     [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.15f;
 
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float explosionDuration = 2f;
+
     public GameObject bulletFighter;
 
     void Update()
@@ -60,8 +63,16 @@ public class controllador : MonoBehaviour
         if (hp <= 0)
         {
             Destroy(gameObject);
+            GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+            Destroy(explosion, explosionDuration);
             AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, dsVolume);
+            FindObjectOfType<LevelLoad>().LoadGameOver();
         }
+    }
+
+    public int GetHp()
+    {
+        return hp;
     }
 
     private void Movimiento()
@@ -93,5 +104,4 @@ public class controllador : MonoBehaviour
             AudioSource.PlayClipAtPoint(shootSFX, Camera.main.transform.position, shootSoundVolume);
         }
     }
-
 }
