@@ -25,6 +25,8 @@ public class controllador : MonoBehaviour
     [SerializeField] [Range(0, 1)] float dsVolume = 0.5f;
     [SerializeField] AudioClip shootSFX;
     [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.15f;
+    [SerializeField] AudioClip hitSFX;
+    [SerializeField] [Range(0, 1)] float hitVolume = 0.15f;
 
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDuration = 2f;
@@ -60,6 +62,7 @@ public class controllador : MonoBehaviour
     {
         hp -= damageDealer.GetDamage();
         damageDealer.Hit();
+        AudioSource.PlayClipAtPoint(hitSFX, Camera.main.transform.position, hitVolume);
         if (hp <= 0)
         {
             Destroy(gameObject);

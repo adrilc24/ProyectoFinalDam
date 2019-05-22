@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\LevelLoad.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\PathEnemigo.cs" />
+    <Compile Include="Assets\Scripts\Shredder.cs" />
     <Compile Include="Assets\Scripts\SpawnEnemigo.cs" />
     <Compile Include="Assets\Scripts\WaveConfig.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
